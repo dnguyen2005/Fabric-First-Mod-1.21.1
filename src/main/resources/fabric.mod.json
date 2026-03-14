@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "firstmod",
+	"version": "${version}",
+	"name": "firstmod",
+	"description": "This is my first mod by Spims!",
+	"authors": [
+		"Spims"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/firstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.spims.firstmod.Firstmod"
+		],
+		"fabric-datagen": [
+			"net.spims.firstmod.FirstmodDataGenerator"
+		],
+		"client": [
+			"net.spims.firstmod.FirstmodClient"
+		]
+
+	},
+	"mixins": [
+		"firstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
